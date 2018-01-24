@@ -1,4 +1,4 @@
-package call.fastJsonVersion;
+package call.jdkStaticPortCall;
 
 import com.alibaba.fastjson.JSON;
 import org.apache.log4j.Logger;
@@ -10,9 +10,9 @@ import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 import java.net.URL;
 
-public class McpSyncService {
+public class StaticPortService {
 
-    private static Logger logger = Logger.getLogger(McpSyncService.class);
+    private static Logger logger = Logger.getLogger(StaticPortService.class);
 
     private McpService getWSPort() {
         try {
@@ -26,8 +26,8 @@ public class McpSyncService {
             logger.debug("get webservice port success!");
             return mcpService;
         } catch (Exception e) {
-            logger.error("McpSyncService get port error ! ", e);
-            throw new RuntimeException("McpSyncService get port fail !");
+            logger.error("CxfSpringService get port error ! ", e);
+            throw new RuntimeException("CxfSpringService get port fail !");
         }
     }
 

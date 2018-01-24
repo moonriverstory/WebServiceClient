@@ -1,4 +1,4 @@
-package call.fastJsonVersion;
+package call.jdkStaticPortCall;
 
 import org.apache.log4j.Logger;
 import pojo.*;
@@ -6,12 +6,12 @@ import pojo.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class McpCallTest {
+public class StaticPortCall {
 
-    private static Logger logger = Logger.getLogger(McpCallTest.class);
+    private static Logger logger = Logger.getLogger(StaticPortCall.class);
 
     public static void main(String[] args) {
-        McpSyncService call = new McpSyncService();
+        StaticPortService call = new StaticPortService();
 
         //查询
         FindVendorsRequest findReq = new FindVendorsRequest();

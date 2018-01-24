@@ -1,4 +1,4 @@
-package call.demo;
+package call.jdkStaticServiceCall;
 
 import org.apache.log4j.Logger;
 import service.McpService;
@@ -7,8 +7,8 @@ import service.McpService_Service;
 /**
  * 通过wsdl生成的jar，静态代理，调用webservice接口
  */
-public class McpClient {
-    private static Logger logger = Logger.getLogger(McpClient.class);
+public class SimpleDemoClient {
+    private static Logger logger = Logger.getLogger(SimpleDemoClient.class);
 
     public static void main(String[] args) {
         //ws接口工厂

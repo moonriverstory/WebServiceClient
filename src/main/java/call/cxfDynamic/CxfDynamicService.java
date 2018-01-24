@@ -9,16 +9,14 @@ import pojo.FindVendorsResponse;
 import pojo.ImportVendersRequest;
 import pojo.ImportVendersResponse;
 
-public class CxfMcpSyncService {
+public class CxfDynamicService {
 
-    private static Logger logger = Logger.getLogger(CxfMcpSyncService.class);
+    private static Logger logger = Logger.getLogger(CxfDynamicService.class);
 
-    //private static final String FIND_WSDL = "http://localhost:7070/webservice/SyncVendorsService?wsdl";
-    private static final String FIND_WSDL = "http://117.185.122.246/services/syncVendorsService?wsdl";
-    private static final String FIND_METHOD = "findVendors";
-    //private static final String SYNC_WSDL = "http://localhost:7070/webservice/SynPopVendorSrv?wsdl";
-    private static final String SYNC_WSDL = "http://117.185.122.246/services/SynPopVendorSrv?wsdl";
-    private static final String SYNC_METHOD = "importVenders";
+    private static final String FIND_WSDL = "http://localhost:7070/webservice/FindService?wsdl";
+    private static final String FIND_METHOD = "find";
+    private static final String SYNC_WSDL = "http://localhost:7070/webservice/UpdateService?wsdl";
+    private static final String SYNC_METHOD = "update";
 
 
     public FindVendorsResponse find(FindVendorsRequest request) {

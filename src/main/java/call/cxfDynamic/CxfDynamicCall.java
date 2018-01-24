@@ -10,7 +10,7 @@ public class CxfDynamicCall {
     private static Logger logger = Logger.getLogger(CxfDynamicCall.class);
 
     public static void main(String[] args) {
-        CxfMcpSyncService call = new CxfMcpSyncService();
+        CxfDynamicService call = new CxfDynamicService();
 
         //查询
         FindVendorsRequest findReq = new FindVendorsRequest();
