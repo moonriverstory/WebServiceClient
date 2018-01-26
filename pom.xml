@@ -81,18 +81,18 @@
         <!--import webservice static client-->
         <dependency>
             <groupId>ice</groupId>
-            <artifactId>webservice.client.syncvendorsservice</artifactId>
+            <artifactId>webservice.client.find</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/webservice-syncvendorsservice-client.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/lib/find-client.jar</systemPath>
         </dependency>
         <!--import webservice static client-->
         <dependency>
             <groupId>ice</groupId>
-            <artifactId>webservice.client.synpopvendorsrv</artifactId>
+            <artifactId>webservice.client.update</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/webservice-synpopvendorsrv-client.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/lib/update-client.jar</systemPath>
         </dependency>
 
     </dependencies>
@@ -101,24 +101,29 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.7.0</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <optimize>true</optimize>
                     <showDeprecation>true</showDeprecation>
+                    <compilerArgs>
+                        <arg>-extdirs</arg>
+                        <arg>${project.basedir}/src/lib</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.5.5</version>
                 <configuration>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>call.cxfDynamic.CxfDynamicCall</mainClass>
+                            <mainClass>call.jdkStaticPortCall.StaticPortCall</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

@@ -7,12 +7,12 @@
 	http://cxf.apache.org/jaxws
 	http://cxf.apache.org/schemas/jaxws.xsd">
 
-    <jaxws:client id="syncVendorsService"
-                  serviceClass="com.zte.eas.ws.interfaceserver.syncvendorsservice.SyncVendorsServicePortType"
-                  address="http://localhost:8080/services/syncVendorsService?wsdl.syncVendorsServiceHttpSoap11Endpoint/"/>
+    <jaxws:client id="findService"
+                  serviceClass="server.FindService"
+                  address="http://106.14.5.254:7070/webservice/FindService"/>
 
-    <jaxws:client id="synPopVendorSrv"
-                  serviceClass="com.zte.eas.ws.pop.SynPopVendorSrvPortType"
-                  address="http://localhost:8080/services/SynPopVendorSrv?wsdl.SynPopVendorSrvHttpSoap11Endpoint/"/>
+    <jaxws:client id="updateService"
+                  serviceClass="server.UpdateService"
+                  address="http://106.14.5.254:7070/webservice/UpdateService"/>
 
 </beans>

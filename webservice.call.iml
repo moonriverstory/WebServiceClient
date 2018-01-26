@@ -2,10 +2,14 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="ApplicationContext" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/applicationContext.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -70,18 +74,18 @@
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.2.2.RELEASE" level="project" />
     <orderEntry type="module-library">
-      <library name="Maven: ice:webservice.client.syncvendorsservice:1.0">
+      <library name="Maven: ice:webservice.client.find:1.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/lib/webservice-syncvendorsservice-client.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/main/resources/lib/find-client.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: ice:webservice.client.synpopvendorsrv:1.0">
+      <library name="Maven: ice:webservice.client.update:1.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/lib/webservice-synpopvendorsrv-client.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/main/resources/lib/update-client.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

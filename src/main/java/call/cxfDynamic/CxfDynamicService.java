@@ -13,9 +13,11 @@ public class CxfDynamicService {
 
     private static Logger logger = Logger.getLogger(CxfDynamicService.class);
 
-    private static final String FIND_WSDL = "http://localhost:7070/webservice/FindService?wsdl";
+    //private static final String FIND_WSDL = "http://106.14.5.254:7070/webservice/FindService?wsdl";
+    private static final String FIND_WSDL = "http://0.0.0.0:7070/webservice/FindService?wsdl";
     private static final String FIND_METHOD = "find";
-    private static final String SYNC_WSDL = "http://localhost:7070/webservice/UpdateService?wsdl";
+    //private static final String SYNC_WSDL = "http://106.14.5.254:7070/webservice/UpdateService?wsdl";
+    private static final String SYNC_WSDL = "http://0.0.0.0:7070/webservice/UpdateService?wsdl";
     private static final String SYNC_METHOD = "update";
 
 

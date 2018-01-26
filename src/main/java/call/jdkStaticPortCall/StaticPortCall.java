@@ -22,8 +22,7 @@ public class StaticPortCall {
         findReq.setPageSize("10");
         findReq.setDataType("VENDOR");
 
-        String findRespJson = call.find(findReq);
-        FindVendorsResponse findResPojo = call.parseFindVendorsResponse(findRespJson);
+        FindVendorsResponse findResPojo = call.find(findReq);
         logger.info("resPojo: " + findResPojo.toString());
         logger.info("response - vendor id: "+findResPojo.getVendorList().get(0).getVendorId());
 
@@ -40,8 +39,7 @@ public class StaticPortCall {
         vendorList.add(vendor1);
         updateReq.setVendorList(vendorList);
 
-        String updateRespJson = call.update(updateReq);
-        ImportVendersResponse updateResPojo = call.parseImportVendersResponse(updateRespJson);
+        ImportVendersResponse updateResPojo = call.update(updateReq);
         logger.info("resPojo: " + updateResPojo.toString());
         logger.info("response - Return Message: "+updateResPojo.getReturnMessage());
     }
