@@ -42,27 +42,6 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.7" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.7" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="module-library">
-      <library name="Maven: ice:webservice.mcp.client:1.0">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/lib/ws-client.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Maven: ice:webservice.mcp.fastjson:1.0">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/lib/fastjson-ws-client.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.10" level="project" />
-    <orderEntry type="library" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
-    <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.axis:axis:1.4" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.rpc:javax.xml.rpc-api:1.1.1" level="project" />
@@ -73,23 +52,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.2.2.RELEASE" level="project" />
-    <orderEntry type="module-library">
-      <library name="Maven: ice:webservice.client.find:1.0">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/lib/find-client.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Maven: ice:webservice.client.update:1.0">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/lib/update-client.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="Maven: ice:local.jar.ws.find:1.0" level="project" />
+    <orderEntry type="library" name="Maven: ice:local.jar.ws.update:1.0" level="project" />
   </component>
 </module>

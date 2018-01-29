@@ -1,8 +1,8 @@
 package call.jdkStaticServiceCall;
 
 import org.apache.log4j.Logger;
-import service.McpService;
-import service.McpService_Service;
+import server.FindService;
+import server.FindService_Service;
 
 /**
  * 通过wsdl生成的jar，静态代理，调用webservice接口
@@ -12,13 +12,11 @@ public class SimpleDemoClient {
 
     public static void main(String[] args) {
         //ws接口工厂
-        McpService_Service service = new McpService_Service();
+        FindService_Service service = new FindService_Service();
         //获得ws接口
-        McpService mcpService = service.getMcpServicePort();
+        FindService mcpService = service.getFindServicePort();
         //调用接口的方法
         String findResult = mcpService.find("");
-        String updateResult = mcpService.update("");
         logger.info("findResult: "+ findResult);
-        logger.info("updateResult: "+ updateResult);
     }
 }

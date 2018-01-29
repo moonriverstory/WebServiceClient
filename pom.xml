@@ -28,26 +28,6 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.7</version>
         </dependency>
-        <!--import mcp webservice client jar-->
-        <dependency>
-            <groupId>ice</groupId>
-            <artifactId>webservice.mcp.client</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/ws-client.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>ice</groupId>
-            <artifactId>webservice.mcp.fastjson</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/fastjson-ws-client.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>com.thoughtworks.xstream</groupId>
-            <artifactId>xstream</artifactId>
-            <version>1.4.10</version>
-        </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -78,26 +58,22 @@
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
         </dependency>
-        <!--import webservice static client-->
+        <!--import webservice static client via nexus local maven host-->
         <dependency>
             <groupId>ice</groupId>
-            <artifactId>webservice.client.find</artifactId>
+            <artifactId>local.jar.ws.find</artifactId>
             <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/find-client.jar</systemPath>
         </dependency>
-        <!--import webservice static client-->
+        <!--import webservice static client via nexus local maven host-->
         <dependency>
             <groupId>ice</groupId>
-            <artifactId>webservice.client.update</artifactId>
+            <artifactId>local.jar.ws.update</artifactId>
             <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/update-client.jar</systemPath>
         </dependency>
 
     </dependencies>
     <build>
-        <finalName>webservice</finalName>
+        <finalName>webservice.call</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
